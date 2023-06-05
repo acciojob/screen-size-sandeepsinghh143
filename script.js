@@ -1,15 +1,17 @@
 //your JS code here. If required.
-function getWindowSize() {
-  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  return { width, height };
-}
+// function getWindowSize() {
+//   const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+//   const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+//   return { width, height };
+// }
 
 function updateWindowSize() {
-  const windowSize = getWindowSize();
+  // const windowSize = getWindowSize();
+	const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   const div = document.getElementById('sizeInfo');
   const heading=document.createElement("h1");
-  heading.innerText = 'Width: ' + windowSize.width +' and Height: ' + windowSize.height;
+  heading.innerText = 'Width: ' + width +' and Height: ' + height;
 	div.append(heading);
 }
 
