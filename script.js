@@ -8,7 +8,9 @@ function getWindowSize() {
 function updateWindowSize() {
   const windowSize = getWindowSize();
   const div = document.getElementById('sizeInfo');
-  div.innerText = 'Width: ' + windowSize.width +'Height: ' + windowSize.height;
+  const heading=document.createElement("h1");
+  heading.innerText = 'Width: ' + windowSize.width +' and Height: ' + windowSize.height;
+	div.append(heading);
 }
 
 // Initial window size
