@@ -1,12 +1,4 @@
-//your JS code here. If required.
-// function getWindowSize() {
-//   const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-//   const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-//   return { width, height };
-// }
-
 function updateWindowSize() {
-  // const windowSize = getWindowSize();
 	const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   const div = document.getElementById('sizeInfo');
